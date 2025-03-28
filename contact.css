@@ -201,6 +201,7 @@
         padding: 40px 10px;
         display: flex;
         justify-content: center;
+        flex-direction: column;
     }
 
     .contact-section h2 {

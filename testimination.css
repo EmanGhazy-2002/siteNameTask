@@ -1,0 +1,252 @@
+/* Testimonials Section Start */
+.testimonials {
+    width: 90%;
+    padding: 60px 15px;
+    background-color: #f8f9fa;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.testimonials h2 {
+    font-size: 32px;
+    color: #222;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.testimonials h2::after {
+    content: '';
+    width: 80px;
+    border: none;
+    border-bottom: 3px solid #007bff;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.testimonials p.subtitle {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.testimonial {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: auto;
+}
+
+.testimonial:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.testimonial img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.testimonial .info {
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonial h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+}
+
+.testimonial .info p {
+    color: #666;
+    font-size: 14px;
+    margin: 0;
+}
+
+.testimonial .info div {
+    color: gold;
+    font-size: 16px;
+    margin: 0;
+    letter-spacing: 2px;
+}
+
+.testimonial p:last-of-type {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    position: relative;
+    padding: 0 10px;
+}
+
+.testimonial p:last-of-type::before {
+    top: -5px;
+    left: 0;
+}
+
+.testimonial p:last-of-type::after {
+    bottom: -5px;
+    right: 0;
+}
+
+/* Responsive Adjustments for Testimonials */
+@media (max-width: 768px) {
+    .testimonials {
+        padding: 40px 10px;
+    }
+
+    .testimonials h2 {
+        font-size: 28px;
+    }
+
+    .testimonials p.subtitle {
+        font-size: 14px;
+        max-width: 90%;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        /* Single column on tablets */
+        gap: 15px;
+        max-width: 80%;
+        /* Centered */
+    }
+
+    .testimonial {
+        padding: 20px;
+    }
+
+    .testimonial img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .testimonial h3 {
+        font-size: 16px;
+    }
+
+    .testimonial .info p {
+        font-size: 12px;
+    }
+
+    .testimonial .info div {
+        font-size: 14px;
+    }
+
+    .testimonial p:last-of-type {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .testimonials-grid {
+        max-width: 90%;
+    }
+}
+
+/* Testimonials Section End */
+
+
+
+/* Stats Section Start */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.stat {
+    position: relative;
+}
+
+.stat h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.stat h2::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -15px;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 3px;
+    background-color: #007bff;
+}
+
+.stat p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 40px;
+}
+
+/* Responsive Adjustments for Stats */
+@media (max-width: 768px) {
+    .stats {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        max-width: 80%;
+        margin: 30px auto;
+    }
+
+    .stat h2 {
+        font-size: 30px;
+    }
+
+    .stat p {
+        font-size: 14px;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .stats {
+        max-width: 90%;
+    }
+
+    .stat h2 {
+        font-size: 26px;
+    }
+
+    .stat p {
+        font-size: 12px;
+    }
+}
+
+/* Stats Section End */

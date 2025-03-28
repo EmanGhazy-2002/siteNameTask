@@ -1,0 +1,106 @@
+/* Alternative Call to Action Section Start */
+.cta-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+
+}
+
+.cta-section-alt {
+    position: relative;
+    width: 70%;
+    max-width: 1200px;
+    padding: 0px 20px 30px 10px;
+    background-color: #007bff;
+    border-radius: 20px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.cta-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 15px;
+    max-width: 600px;
+    font-weight: 400;
+}
+
+.cta-content p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    max-width: 600px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.cta-content .cta-btn {
+    background: transparent;
+    color: #fff;
+    padding: 10px 30px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-content .cta-btn:hover {
+    background: #fff;
+    color: #007bff;
+}
+
+/* Responsive Adjustments for Alternative Call to Action */
+@media (max-width: 768px) {
+    .cta-section-alt {
+        padding: 40px 20px;
+        width: 85%;
+    }
+
+    .cta-content h2 {
+        font-size: 28px;
+    }
+
+    .cta-content p {
+        font-size: 14px;
+        max-width: 90%;
+    }
+
+    .cta-content .cta-btn {
+        font-size: 14px;
+        padding: 8px 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cta-section-alt {
+        padding: 30px 15px;
+    }
+
+    .cta-content h2 {
+        font-size: 24px;
+    }
+
+    .cta-content p {
+        font-size: 12px;
+    }
+
+    .cta-content .cta-btn {
+        font-size: 12px;
+        padding: 6px 20px;
+    }
+}
+
+
+/* Alternative Call to Action Section End */
