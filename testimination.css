@@ -1,6 +1,6 @@
 /* Testimonials Section Start */
 .testimonials {
-    width: 90%;
+    width: 100%;
     padding: 60px 15px;
     background-color: #f8f9fa;
     position: relative;
@@ -246,6 +246,20 @@
 
     .stat p {
         font-size: 12px;
+    }
+}
+@media (max-width: 992px) {
+    .contact-container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .contact-box,
+    .contact-form {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
 

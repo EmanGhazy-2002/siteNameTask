@@ -1,7 +1,7 @@
 /* Contact Section Start */
 .contact-section {
     width: 100%;
-    padding: 60px 15px;
+    padding: 60px 25px;
     background-color: #f8f9fa;
     display: flex;
     flex-direction: column;
@@ -44,8 +44,8 @@
 
 .contact-box {
     flex: 1;
-    min-width: 300px;
-    max-width: 400px;
+    min-width: 400px;
+    max-width: 500px;
     background: #007bff;
     color: white;
     padding: 30px;
@@ -114,7 +114,7 @@
 
 .contact-form {
     flex: 2;
-    min-width: 300px;
+    min-width: 500px;
     max-width: 600px;
     background: white;
     padding: 30px;
@@ -214,12 +214,19 @@
     }
 
     .contact-container {
+        flex-direction: column;
+        /* Stack items vertically */
         gap: 20px;
+        align-items: center;
+        /* Center the items horizontally */
     }
 
     .contact-box,
     .contact-form {
         max-width: 80%;
+        /* Full width on smaller screens */
+        width: 100%;
+        /* Ensure they take full available width */
         margin-bottom: 20px;
     }
 
@@ -247,23 +254,4 @@
         font-size: 16px;
     }
 }
-
-@media (max-width: 600px) {
-    .form-group {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .contact-form input,
-    .contact-form textarea {
-        padding: 8px;
-        font-size: 12px;
-    }
-
-    .send-btn {
-        font-size: 14px;
-        padding: 8px 12px;
-    }
-}
-
 /* Contact Section End */
