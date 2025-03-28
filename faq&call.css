@@ -1,0 +1,253 @@
+/* FAQ Section Start */
+.faq-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1100px;
+    margin: 50px auto 0 auto;
+    padding: 20px;
+    background-color: #F4F9FF;
+}
+
+.faq-text {
+    width: 40%;
+    padding-top: 0;
+}
+
+.faq-text h2 {
+    font-size: 32px;
+    color: #2c3e50;
+    margin-top: 0;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.faq-text p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.faq-text img {
+    width: 250px;
+    height: auto;
+}
+
+.faq-container {
+    width: 60%;
+}
+
+.faq-item {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.faq-item.active {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.faq-item button {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 15px 20px;
+    font-size: 18px;
+    color: #333;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+}
+
+.faq-item button::after {
+    content: "▶";
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #000;
+    font-weight: normal;
+}
+
+.faq-item.active button::after {
+    content: "▴";
+    color: #007bff;
+}
+
+.faq-item div {
+    display: none;
+    padding: 0 20px 15px;
+}
+
+.faq-item.active div {
+    display: block;
+}
+
+.faq-item div p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Responsive Adjustments for FAQ */
+@media (max-width: 768px) {
+    .faq-section {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        max-width: 90%;
+        margin: 30px auto;
+        padding: 15px;
+    }
+
+    .faq-text,
+    .faq-container {
+        width: 100%;
+    }
+
+    .faq-text {
+        text-align: center;
+    }
+
+    .faq-text h2 {
+        font-size: 28px;
+    }
+
+    .faq-text p {
+        font-size: 14px;
+    }
+
+    .faq-text img {
+        width: 200px;
+    }
+
+    .faq-item button {
+        font-size: 16px;
+        padding: 12px 15px;
+    }
+
+    .faq-item div p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .faq-text h2 {
+        font-size: 24px;
+    }
+
+    .faq-text p {
+        font-size: 12px;
+    }
+
+    .faq-text img {
+        width: 150px;
+    }
+
+    .faq-item button {
+        font-size: 14px;
+    }
+}
+
+/* FAQ Section End */
+
+/* Call to Action Section Start */
+/* Call to Action Wrapper */
+.cta-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 0;
+}
+
+/* Call to Action Section */
+.cta-section {
+    width: 90%;
+    max-width: 1100px;
+    padding: 60px 15px;
+    background-color: #007bff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0px auto 0 auto;
+    padding: 20px;
+}
+
+/* Rest of the .cta-section styles remain the same */
+.cta-section h2 {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.cta-section p {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    max-width: 800px;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+.cta-btn {
+    background: transparent;
+    color: #fff;
+    padding: 10px 30px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background: #fff;
+    color: #007bff;
+}
+
+/* Responsive Adjustments for Call to Action */
+@media (max-width: 768px) {
+    .cta-section {
+        padding: 40px 10px;
+    }
+
+    .cta-section h2 {
+        font-size: 28px;
+    }
+
+    .cta-section p {
+        font-size: 14px;
+        max-width: 90%;
+    }
+
+    .cta-btn {
+        font-size: 14px;
+        padding: 8px 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .cta-section h2 {
+        font-size: 24px;
+    }
+
+    .cta-section p {
+        font-size: 12px;
+    }
+
+    .cta-btn {
+        font-size: 12px;
+        padding: 6px 20px;
+    }
+}
+
+/* Call to Action Section End */
