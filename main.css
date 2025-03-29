@@ -543,6 +543,129 @@ body {
 
 /* FAQ Section End */
 
+
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+/* Services Grid Styles */
+.services-grid {
+    display: flex;
+    text-align: center;
+    gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* Service Card Styles */
+.service-card {
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    max-width: 200px;
+}
+
+/* Service Card Color Variations */
+.service-card.yellow {
+    background-color: #FFF9E6;
+}
+
+.service-card.blue {
+    background-color: #E6F4FF;
+}
+
+.service-card.green {
+    background-color: #E6F9EF;
+}
+
+.service-card.pink {
+    background-color: #FFE6E9;
+}
+
+/* Icon Styles */
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+/* Icon Color Variations */
+.yellow .icon {
+    border: 2px solid #E6C15A;
+    color: #E6C15A;
+}
+
+.blue .icon {
+    border: 2px solid #3AA0FF;
+    color: #3AA0FF;
+}
+
+.green .icon {
+    border: 2px solid #4FD1B1;
+    color: #4FD1B1;
+}
+
+.pink .icon {
+    border: 2px solid #FF7B92;
+    color: #FF7B92;
+}
+
+/* Service Title Styles */
+.service-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Service Description Styles */
+.service-description {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* Responsive Styles Start */
+
+/* Tablet View (max-width: 768px) */
+@media (max-width: 768px) {
+    .services-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        max-width: 60%;
+        /* width: 100%; */
+    }
+}
+
+/* Mobile View (max-width: 480px) */
+@media (max-width: 480px) {
+    .services-grid {
+        gap: 15px;
+        flex-direction: column;
+    }
+
+    .service-card {
+        padding: 20px;
+        /* min-height: 180px; */
+        max-width: 60%;
+        /* width: 100%; */
+    }
+}
+
+/* Responsive Styles End */
+
 /* Call to Action Section Start */
 /* Call to Action Wrapper */
 .cta-wrapper {
