@@ -544,6 +544,159 @@ body {
 /* FAQ Section End */
 
 
+  /* Services Section Section */
+  .our-services-section {
+      width: 100%;
+      padding: 60px 15px;
+      background-color: #f8f9fa;
+  }
+
+  .services-header {
+      text-align: center;
+      margin-bottom: 40px;
+  }
+
+  .services-header h2 {
+      font-size: 32px;
+      color: #222;
+      margin-bottom: 15px;
+      position: relative;
+  }
+
+  .services-header h2::after {
+      content: '';
+      width: 80px;
+      border-bottom: 3px solid #007bff;
+      position: absolute;
+      bottom: -8px;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+
+  .services-header p {
+      font-size: 16px;
+      color: #666;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.6;
+  }
+
+  /* Services Grid */
+  .services-container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+  }
+
+  /* Service Card */
+  .service-item {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .service-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Service Header (Icon + Title) */
+  .service-header-row {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 15px;
+  }
+
+  .service-img {
+      width: 50px;
+      height: 50px;
+      background-color: #e6f3ff;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+  }
+
+  .service-img svg {
+      width: 24px;
+      height: 24px;
+  }
+
+  .service-name {
+      font-size: 18px;
+      color: #333;
+      font-weight: 600;
+      margin: 0;
+  }
+
+  .service-details {
+      color: #666;
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+  }
+
+  .service-link {
+      color: #4a90e2;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      font-size: 14px;
+  }
+
+  .service-link svg {
+      margin-left: 5px;
+      width: 16px;
+      height: 16px;
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+      .services-container {
+          grid-template-columns: 1fr;
+          max-width: 80%;
+      }
+
+      .our-services-section {
+          padding: 40px 10px;
+      }
+
+      .services-header h2 {
+          font-size: 28px;
+      }
+
+      .services-header p {
+          font-size: 14px;
+      }
+  }
+
+  @media (max-width: 480px) {
+      .services-container {
+          max-width: 90%;
+      }
+
+      .service-header-row {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 10px;
+      }
+
+      .service-img {
+          width: 40px;
+          height: 40px;
+      }
+  }
+
+/* Services Section End */
+
+
 /* Container Styles */
 .container {
     max-width: 1200px;
@@ -568,6 +721,7 @@ body {
     flex-direction: column;
     text-align: start;
     max-width: 200px;
+    flex: 1 1 270px;
 }
 
 /* Service Card Color Variations */
