@@ -782,6 +782,10 @@ body {
     list-style: none;
     padding: 0;
     margin-bottom: 30px;
+    display: flex;
+    align-items: flex-start;
+    /* flex-wrap: wrap; */
+    gap: 20px;
 }
 
 .featu-list li {
@@ -808,7 +812,8 @@ body {
 }
 
 .featu-list li i::before {
-    content: '\2714'; /* Unicode for checkmark (✔) */
+    content: '\2714';
+    /* Unicode for checkmark (✔) */
     font-family: 'Arial', sans-serif;
 }
 
@@ -824,7 +829,12 @@ body {
     border-radius: 50%;
     object-fit: cover;
 }
-
+.ceo-details{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap:20px ;
+}
 .ceo-details h3 {
     font-size: 18px;
     font-weight: 600;
@@ -843,10 +853,15 @@ body {
     align-items: center;
     gap: 5px;
     margin-top: 5px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .ceo-details .contact .phone-icon::before {
-    content: '\260E'; /* Unicode for phone icon (☎) */
+    content: '\260E';
+    /* Unicode for phone icon (☎) */
     font-family: 'Arial', sans-serif;
     color: #007bff;
 }
@@ -863,7 +878,8 @@ body {
 .image-wrapper {
     position: relative;
     width: 100%;
-    height: 400px; /* Adjust based on your image dimensions */
+    height: 400px;
+    /* Adjust based on your image dimensions */
 }
 
 .main-image {
@@ -930,6 +946,8 @@ body {
 
     .ceo-info {
         justify-content: center;
+        flex-direction: column;
+        /* Default for tablet */
     }
 
     .image-wrapper {
@@ -953,29 +971,48 @@ body {
     }
 
     .main-heading {
-        font-size: 24px;
+        font-size: 22px;
+        /* Smaller font for mobile */
     }
 
     .description {
-        font-size: 13px;
+        font-size: 12px;
+        /* Smaller font for mobile */
     }
 
     .featu-list li {
-        font-size: 14px;
+        font-size: 13px;
+        /* Smaller font for mobile */
     }
 
     .featu-list li i {
-        font-size: 11px;
-        width: 18px;
-        height: 18px;
+        font-size: 10px;
+        width: 16px;
+        height: 16px;
+    }
+
+    .ceo-info {
+        flex-direction: row;
+        /* Row direction for mobile */
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
     }
 
     .ceo-details h3 {
-        font-size: 16px;
+        font-size: 15px;
+        /* Smaller font for mobile */
     }
 
     .ceo-details p {
-        font-size: 13px;
+        font-size: 12px;
+        /* Smaller font for mobile */
+    }
+
+    .ceo-details .contact {
+        font-size: 12px;
+        /* Smaller font for mobile */
+        padding: 8px;
     }
 
     .image-wrapper {
@@ -983,20 +1020,28 @@ body {
     }
 
     .main-image {
-        width: 90%;
-        height: 90%;
+        width: 100%;
+        /* Full width for mobile */
+        height: 60%;
+        /* Adjusted height */
     }
 
     .secondary-image {
-        width: 80%;
-        height: 80%;
+        width: 100%;
+        /* Full width for mobile */
+        height: 40%;
+        /* Adjusted height */
+        bottom: -10px;
+        /* Slight overlap adjustment */
     }
 
     .experience-badge {
-        font-size: 12px;
-        padding: 8px 15px;
+        font-size: 11px;
+        /* Smaller font for mobile */
+        padding: 6px 12px;
     }
 }
+
 /* More About Us Section End */
 
 /* Travel App Section Start */
