@@ -215,6 +215,7 @@ body {
 
 /* Header Section End */
 
+
 /* Content Section Start */
 /* Main Section */
 .content-section {
@@ -253,7 +254,6 @@ body {
     padding: 0.5rem 1rem;
     color: #007bff;
     background-color: rgba(13, 131, 253, 0.08);
-    /* Matches the light blue background */
     border-radius: 50px;
     font-weight: 500;
     font-size: 14px;
@@ -378,22 +378,50 @@ body {
     color: #007bff;
 }
 
-.stat-text {
+.sociedades .stat-text {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
 }
 
+.stat-text>div:first-child {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    /* margin-bottom: 5px; */
+}
+.stat-text .handel{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* flex-wrap: wrap; */
+    text-align: start;
+    align-items: flex-start;
+}
 .stat-value {
-    font-size: 24px;
-    font-weight: 700;
-    color: #007bff;
-    margin-bottom: 5px;
+    font-size: 23px;
+    font-weight: 400;
+    color: #222;
+    padding-top: 0;
+}
+
+.stat-text h4 {
+    font-size: 23px;
+    font-weight: 400;
+    color: #222;
+    margin: 0;
+    padding-top: 0;
+    max-width: 100px;
+    /* flex-wrap: wrap; */
+    white-space: nowrap;
 }
 
 .stat-label {
-    font-size: 14px;
+    font-size: 15px;
     color: #666;
     line-height: 1.5;
+    padding-top: 0;
 }
 
 /* Responsive Styles */
@@ -433,6 +461,9 @@ body {
 }
 
 /* Content Section End */
+
+
+
 
 /* Features Section Start */
 /* Features Section */
@@ -749,6 +780,7 @@ body {
     gap: 10px;
     align-items: center;
 }
+
 .section-heading {
     font-size: 16px;
     font-weight: 600;
@@ -906,8 +938,8 @@ body {
 
 .experience-badge {
     position: absolute;
-    width:150px;
-    height:60px;
+    width: 150px;
+    height: 60px;
     bottom: 10px;
     right: 10px;
     background-color: #007bff;
