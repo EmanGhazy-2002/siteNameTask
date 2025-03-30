@@ -732,6 +732,273 @@ body {
 
 /* Features Section End */
 
+
+/* More About Us Section Start */
+.about-us-section {
+    width: 100%;
+    padding: 80px 15px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.about-us-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.text-content {
+    padding-right: 30px;
+}
+
+.section-heading {
+    font-size: 16px;
+    font-weight: 600;
+    color: #007bff;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.main-heading {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.description {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.featu-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.featu-list li {
+    display: flex;
+    align-items: flex-start;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.featu-list li i {
+    color: white;
+    font-size: 12px;
+    margin-right: 10px;
+    margin-top: 4px;
+    background-color: #007bff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.featu-list li i::before {
+    content: '\2714'; /* Unicode for checkmark (✔) */
+    font-family: 'Arial', sans-serif;
+}
+
+.ceo-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.ceo-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.ceo-details h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222;
+    margin-bottom: 5px;
+}
+
+.ceo-details p {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+
+.ceo-details .contact {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.ceo-details .contact .phone-icon::before {
+    content: '\260E'; /* Unicode for phone icon (☎) */
+    font-family: 'Arial', sans-serif;
+    color: #007bff;
+}
+
+.ceo-details .contact span {
+    color: #007bff;
+    font-weight: 500;
+}
+
+.image-content {
+    position: relative;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust based on your image dimensions */
+}
+
+.main-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.secondary-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.experience-badge {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .about-us-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .text-content {
+        padding-right: 0;
+        text-align: center;
+    }
+
+    .section-heading::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .main-heading {
+        font-size: 28px;
+    }
+
+    .featu-list {
+        text-align: left;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .ceo-info {
+        justify-content: center;
+    }
+
+    .image-wrapper {
+        height: 300px;
+    }
+
+    .main-image {
+        width: 80%;
+        height: 80%;
+    }
+
+    .secondary-image {
+        width: 70%;
+        height: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    .about-us-section {
+        padding: 40px 15px;
+    }
+
+    .main-heading {
+        font-size: 24px;
+    }
+
+    .description {
+        font-size: 13px;
+    }
+
+    .featu-list li {
+        font-size: 14px;
+    }
+
+    .featu-list li i {
+        font-size: 11px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .ceo-details h3 {
+        font-size: 16px;
+    }
+
+    .ceo-details p {
+        font-size: 13px;
+    }
+
+    .image-wrapper {
+        height: 250px;
+    }
+
+    .main-image {
+        width: 90%;
+        height: 90%;
+    }
+
+    .secondary-image {
+        width: 80%;
+        height: 80%;
+    }
+
+    .experience-badge {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+}
+/* More About Us Section End */
+
 /* Travel App Section Start */
 .travel-app {
     display: flex;
